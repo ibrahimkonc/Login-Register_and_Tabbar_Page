@@ -53,7 +53,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
                       },
                       controller: _emailController,
                       decoration: const InputDecoration(
-                          hintText: "Email Giriniz...",
+                          hintText: "Email Giriniz... ",
                           border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10))),
