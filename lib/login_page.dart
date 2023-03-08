@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:mart_8_calismalar/home_page.dart';
+import 'package:mart_8_calismalar/register_page.dart';
+import 'package:mart_8_calismalar/tabs_subwidgets/home.dart';
 
 class MyLoginPage extends StatefulWidget {
   const MyLoginPage({super.key});
@@ -131,6 +134,10 @@ class _MyLoginPageState extends State<MyLoginPage> {
                                       "Tebrikler Giriş Başarılı...",
                                       style: TextStyle(color: Colors.white),
                                     )));
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomePage()));
                           },
                           child: const Text(
                             "Giriş Yapınız",
@@ -138,6 +145,15 @@ class _MyLoginPageState extends State<MyLoginPage> {
                                 color: Color.fromARGB(255, 255, 255, 255),
                                 fontSize: 16),
                           )),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MyRegisterPage()));
+                      },
+                      child: Text("Hesabınız Yok Mu? Kayıt ol"),
                     )
                   ],
                 ),

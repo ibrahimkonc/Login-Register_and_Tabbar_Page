@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mart_8_calismalar/login_page.dart';
+import 'package:mart_8_calismalar/register_page.dart';
 
 import 'home_page.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       //   useMaterial3: false,
       // ),
       theme: ThemeData(useMaterial3: true),
-      home: const MyLoginPage(),
+      home: MyLoginPage(),
     );
   }
 }
