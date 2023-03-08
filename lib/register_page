@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class MyLoginPage extends StatefulWidget {
-  const MyLoginPage({super.key});
+class MyRegisterPage extends StatefulWidget {
+  const MyRegisterPage({super.key});
 
   @override
-  State<MyLoginPage> createState() => _MyLoginPageState();
+  State<MyRegisterPage> createState() => _MyRegisterPageState();
 }
 
 const Color myColorTheme = Colors.blueGrey;
 
-class _MyLoginPageState extends State<MyLoginPage> {
+class _MyRegisterPageState extends State<MyRegisterPage> {
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
