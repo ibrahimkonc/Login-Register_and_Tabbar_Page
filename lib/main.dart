@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mart_8_calismalar/login_page.dart';
 import 'package:mart_8_calismalar/register_page.dart';
+import 'package:mart_8_calismalar/tabs_subwidgets/home.dart';
 
 import 'home_page.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       themeMode: ThemeMode.dark,
       theme: ThemeData(useMaterial3: true),
-      home: MyLoginPage(),
+      home: HomePage(),
     );
   }
 }

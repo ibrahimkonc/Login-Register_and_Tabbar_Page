@@ -60,8 +60,15 @@ class HomePage extends StatelessWidget {
                                   image: NetworkImage(
                                       "https://picsum.photos/200/300"))),
                         ),
-                        title: Text("Haberler $index. fotosu"),
-                        subtitle: const Text("Haber subtitleı"),
+                        shape: RoundedRectangleBorder(
+                            side: BorderSide(width: 2, color: Colors.black),
+                            borderRadius: BorderRadius.circular(20)),
+                        title: Text(
+                          "Haberler $index. fotosu",
+                          style: const TextStyle(color: Colors.white),
+                        ),
+                        subtitle: const Text("Haber subtitle",
+                            style: TextStyle(color: Colors.white)),
                       ),
                     );
                   }),
