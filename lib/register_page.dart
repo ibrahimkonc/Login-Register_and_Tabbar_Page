@@ -9,6 +9,8 @@ class MyRegisterPage extends StatefulWidget {
   State<MyRegisterPage> createState() => _MyRegisterPageState();
 }
 
+const Color myPrimaryColor = Colors.blueGrey;
+
 class _MyRegisterPageState extends State<MyRegisterPage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();
@@ -168,7 +170,10 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
                                       )));
                               return;
                             }
-                            Navigator.pop(context);
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MyLoginPage()));
                             ScaffoldMessenger.of(context)
                                 .showSnackBar(const SnackBar(
                                     backgroundColor: myPrimaryColor,
@@ -203,5 +208,3 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
     );
   }
 }
-
-const Color myPrimaryColor = Colors.teal;

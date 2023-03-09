@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:mart_8_calismalar/home_page.dart';
 import 'package:mart_8_calismalar/register_page.dart';
 import 'package:mart_8_calismalar/tabs_subwidgets/home.dart';
 
@@ -17,7 +16,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  String email = "email@email.com";
+  String email = "admin@gmail.com";
   String password = "123";
   bool isVisibility = true;
 

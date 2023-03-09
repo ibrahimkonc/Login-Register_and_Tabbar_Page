@@ -6,15 +6,25 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:
-          AppBar(backgroundColor: Colors.teal, title: const Text("Ana Sayfa")),
+      appBar: AppBar(
+        backgroundColor: Colors.blueGrey,
+        elevation: 5,
+        title: const Text(
+          "Ana Sayfa",
+          style: TextStyle(
+              color: Color.fromARGB(255, 255, 255, 255),
+              fontSize: 22,
+              fontWeight: FontWeight.w600),
+        ),
+      ),
       body: Column(
         children: [
           Container(
               height: 60,
               margin: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
               decoration: BoxDecoration(
-                  color: Colors.teal, borderRadius: BorderRadius.circular(8)),
+                  color: Colors.blueGrey,
+                  borderRadius: BorderRadius.circular(8)),
               child: const Center(
                   child: Text(
                 "Haberler",
@@ -29,7 +39,7 @@ class HomePage extends StatelessWidget {
               clipBehavior: Clip.antiAlias,
               margin: const EdgeInsets.all(4),
               decoration: BoxDecoration(
-                  color: Colors.teal,
+                  color: Colors.blueGrey,
                   borderRadius: BorderRadius.circular(18 - 2)),
               child: ListView.builder(
                   shrinkWrap: true,
@@ -37,7 +47,7 @@ class HomePage extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return SizedBox(
                       child: ListTile(
-                        tileColor: Colors.teal.shade200,
+                        tileColor: Colors.blueGrey.shade200,
                         leading: Container(
                           height: 40,
                           width: 40,
